@@ -152,8 +152,6 @@ function matchedBlocks(blockOne, blockTwo) {
             timeBonus.style.display = "none";
         }, 1300);
 
-        // console.log(+timeRemaining.innerText + 100);
-
         for (let i = 0; i < 4; i++) {
 
             timeRemaining.innerText ++;

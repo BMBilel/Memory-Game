@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Game | Samar && Bilel</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+
+    <body>
+        
+        <div class="game-logo">
+            <span class="logo">
+                <img src="../Images/logo.jpg" alt="">
+            </span>
+        </div>
+
+        <div class="backgroundMusic-Controllar">
+            <span class="visible">
+                <i class="fa-solid fa-volume-high"></i>
+            </span>
+
+            <span class="mute-button">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </span>
+        </div>
+
+        <div class="sweet-alert-container">
+            <div class="sweet-alert">
+                <div class="error-word">
+                    <span>Error</span>
+                </div>
+
+                <div class="error-text">
+                    <span> The "Player Name" field Cannot Contain An Empty Value  </span>
+                </div>
+
+                <div class="button">
+                    <span>Ok</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup">
+            
+            <div class="levels">
+                <form action="">
+
+                    <div class="player-name">
+                        <input type="text" name="playerName"placeholder="Player Name ...">
+                    </div>
+
+                    <div class="level">
+                        <input type="radio" id="easy" name="R1">
+                        <label for="easy">Easy</label>
+                    </div>
+
+                    <div class="level">
+                        <input type="radio" id="medium" name="R1">
+                        <label for="medium">Medium</label>
+                    </div>
+
+                    <div class="level">
+                        <input type="radio" id="hard" name="R1">
+                        <label for="hard">Hard</label>
+                    </div>
+
+                    <div class="controll-button">
+                        <span>Click To Play</span>
+                    </div>
+
+                </form>
+
+            </div>
+            
+        </div>
+
+        <div class="player-score">
+            <div class="score-info-container">
+                <div class="score-info">
+                    <span class="winner-name" style="font-size: 45px; color: rgb(0, 150, 136); font-weight: bold; margin-right: 25px;">Mohammed BenMrad</span>
+                    <span class="text" style="font-size: 35px; font-weight: bold;"> You Win With Score : </span> 
+                    <span class="score-number" style="font-size: 45px; color: rgb(0, 150, 136); font-weight: bold;">0</span> 
+                    <span class="text" style="margin-left: 8px; font-size: 35px; font-weight: bold;">pts</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-over">
+            <span class="game-over-msg">
+                <span class="loser-name">Bilel</span> 
+                <span class="unlucky">You Lose The Game Hard Luck</span>
+            </span>
+        </div>
+        
+        <div class="info-container">
+            <div class="name">
+                Hello : <span></span>
+            </div>
+
+            <div class="time-remaining">
+                <span class="seconds">
+                    0
+                    <span class="bonus">+5s</span>
+                </span>
+                Second
+            </div>
+
+            <div class="tries">
+                Wrong tries : <span>0</span>
+            </div>
+
+            <div class="best-score">
+                Best Score : <span>0</span>
+            </div>
+        </div>
+
+        <div class="memory-game-container">
+
+            <div class="game-container" data-tech="lion">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/lion.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="lion">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/lion.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="tiger">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/tiger.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="tiger">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/tiger.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="panda">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/panda.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="panda">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/panda.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="dog">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/dog.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="dog">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/dog.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="donkey">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/donkey.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="donkey">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/donkey.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="elephant">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/elephant.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="elephant">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/elephant.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="giraff">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/giraff.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="giraff">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/giraff.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="monkey">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/monkey.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="monkey">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/monkey.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="rabbit">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/rabbit.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="rabbit">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/rabbit.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="wolf">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/wolf.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-container" data-tech="wolf">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="../Images/wolf.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <script src="../JS/Main.js"></script>
+    </body>
+</html>
